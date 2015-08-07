@@ -1,0 +1,10 @@
+# -*- coding: UTF-8 -*-
+
+#Pillow
+
+from PIL import Image
+im = Image.open('south-park.png')
+print(im.format,im.size,im.mode)
+
+im.thumbnail((200,100))
+im.save('thumb.jpg','JPEG')
